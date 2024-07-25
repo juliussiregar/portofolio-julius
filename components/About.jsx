@@ -1,5 +1,5 @@
 import DevImg from './DevImg';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 import {
