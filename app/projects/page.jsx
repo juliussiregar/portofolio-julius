@@ -12,8 +12,8 @@ const projectData = [
     name: 'My Portofolio',
     description:
       'A personal portfolio showcasing my skills and projects. Designed with a sleek and modern interface using Next.js, featuring smooth animations, responsive design, and a comprehensive overview of my work and achievements.',
-    link: '/',
-    github: '/',
+    link: 'https://portofolio-julius.vercel.app/',
+    github: 'https://github.com/juliussiregar/portofolio-julius',
   },
   {
     image: '/work/2.png',
