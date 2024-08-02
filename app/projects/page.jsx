@@ -59,26 +59,28 @@ const ProjectPage = () => {
             <Card key={index} className='group overflow-hidden relative'>
               <CardHeader className='p-0'>
                 {/* image */}
-                <div className='relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden'>
+                <div className='relative w-full h-[200px] sm:h-[250px] md:h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 overflow-hidden'>
                   <Image
-                    className='absolute bottom-0 shadow-2xl'
+                    className='object-cover shadow-2xl'
                     src={project.image}
-                    width={400}
-                    height={400}
+                    layout='fill'
+                    objectFit='cover'
                     alt={project.name}
                     priority
                   />
                   {/* btn links */}
-                  <div className='flex gap-x-4'>
+                  <div className='flex gap-x-2 sm:gap-x-4 absolute bottom-4 left-4'>
                     <Link
-                      href={project.link} target='_blank'
-                      className='bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200'
+                      href={project.link}
+                      target='_blank'
+                      className='bg-secondary w-[40px] sm:w-[54px] h-[40px] sm:h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200'
                     >
                       <Link2Icon className='text-white' />
                     </Link>
                     <Link
-                      href={project.github} target='_blank'
-                      className='bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300'
+                      href={project.github}
+                      target='_blank'
+                      className='bg-secondary w-[40px] sm:w-[54px] h-[40px] sm:h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300'
                     >
                       <Github className='text-white' />
                     </Link>

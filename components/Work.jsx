@@ -56,29 +56,29 @@ const projectData = [
 
 const Work = () => {
   return (
-    <section className='relative mb-12 xl:mb-48'>
-      <div className='container mx-auto'>
+    <section className='relative mb-8 sm:mb-12 xl:mb-48'>
+      <div className='container mx-auto px-4 sm:px-0'>
         {/* text */}
-        <div className='max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start'>
-          <h2 className='section-title mb-4'>Latest Projects</h2>
-          <p className='subtitle mb-8'>
+        <div className='max-w-full sm:max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-8 sm:mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start'>
+          <h2 className='font-bold mb-2 sm:mb-4 text-2xl sm:text-2xl'>Latest Projects</h2>
+          <p className='subtitle mb-4 sm:mb-8 text-sm sm:text-base'>
             Explore my latest work, where innovation meets execution. Each project reflects my commitment to delivering high-quality and user-centric solutions.
           </p>
           <Link href='/projects'>
-            <Button>All projects</Button>
+            <Button >All projects</Button>
           </Link>
         </div>
         {/* slider */}
-        <div className='xl:max-w-[1000px] xl:absolute right-0 top-0'>
+        <div className='w-full sm:xl:max-w-[1000px] xl:absolute right-0 top-0'>
           <Swiper
-            className='h-[300px] sm:h-[400px] xl:h-[480px]'
+            className='h-[250px] sm:h-[300px] xl:h-[480px]'
             slidesPerView={1}
             breakpoints={{
               640: {
                 slidesPerView: 2,
               },
             }}
-            spaceBetween={30}
+            spaceBetween={20}
             modules={[Pagination]}
             pagination={{ clickable: true }}
           >
@@ -94,6 +94,7 @@ const Work = () => {
         </div>
       </div>
     </section>
+
   );
 };
 
